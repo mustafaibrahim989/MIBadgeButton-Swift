@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DCA509D19AE63610002F2E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA509C19AE63610002F2E6 /* AppDelegate.swift */; };
+		3DCA509F19AE63610002F2E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA509E19AE63610002F2E6 /* ViewController.swift */; };
+		3DCA50A219AE63610002F2E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA50A019AE63610002F2E6 /* Main.storyboard */; };
+		3DCA50A419AE63610002F2E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA50A319AE63610002F2E6 /* Images.xcassets */; };
+		3DCA50B019AE63610002F2E6 /* MIBadgeButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA50AF19AE63610002F2E6 /* MIBadgeButtonTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DCA50AA19AE63610002F2E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DCA508F19AE63610002F2E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DCA509619AE63610002F2E6;
+			remoteInfo = MIBadgeButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DCA509719AE63610002F2E6 /* MIBadgeButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MIBadgeButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DCA509B19AE63610002F2E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DCA509C19AE63610002F2E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DCA509E19AE63610002F2E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DCA50A119AE63610002F2E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DCA50A319AE63610002F2E6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3DCA50A919AE63610002F2E6 /* MIBadgeButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MIBadgeButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DCA50AE19AE63610002F2E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DCA50AF19AE63610002F2E6 /* MIBadgeButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIBadgeButtonTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DCA509419AE63610002F2E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DCA50A619AE63610002F2E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DCA508E19AE63610002F2E6 = {
+			isa = PBXGroup;
+			children = (
+				3DCA509919AE63610002F2E6 /* MIBadgeButton */,
+				3DCA50AC19AE63610002F2E6 /* MIBadgeButtonTests */,
+				3DCA509819AE63610002F2E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DCA509819AE63610002F2E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DCA509719AE63610002F2E6 /* MIBadgeButton.app */,
+				3DCA50A919AE63610002F2E6 /* MIBadgeButtonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DCA509919AE63610002F2E6 /* MIBadgeButton */ = {
+			isa = PBXGroup;
+			children = (
+				3DCA509C19AE63610002F2E6 /* AppDelegate.swift */,
+				3DCA509E19AE63610002F2E6 /* ViewController.swift */,
+				3DCA50A019AE63610002F2E6 /* Main.storyboard */,
+				3DCA50A319AE63610002F2E6 /* Images.xcassets */,
+				3DCA509A19AE63610002F2E6 /* Supporting Files */,
+			);
+			path = MIBadgeButton;
+			sourceTree = "<group>";
+		};
+		3DCA509A19AE63610002F2E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DCA509B19AE63610002F2E6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DCA50AC19AE63610002F2E6 /* MIBadgeButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DCA50AF19AE63610002F2E6 /* MIBadgeButtonTests.swift */,
+				3DCA50AD19AE63610002F2E6 /* Supporting Files */,
+			);
+			path = MIBadgeButtonTests;
+			sourceTree = "<group>";
+		};
+		3DCA50AD19AE63610002F2E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DCA50AE19AE63610002F2E6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DCA509619AE63610002F2E6 /* MIBadgeButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DCA50B319AE63610002F2E6 /* Build configuration list for PBXNativeTarget "MIBadgeButton" */;
+			buildPhases = (
+				3DCA509319AE63610002F2E6 /* Sources */,
+				3DCA509419AE63610002F2E6 /* Frameworks */,
+				3DCA509519AE63610002F2E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MIBadgeButton;
+			productName = MIBadgeButton;
+			productReference = 3DCA509719AE63610002F2E6 /* MIBadgeButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DCA50A819AE63610002F2E6 /* MIBadgeButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DCA50B619AE63610002F2E6 /* Build configuration list for PBXNativeTarget "MIBadgeButtonTests" */;
+			buildPhases = (
+				3DCA50A519AE63610002F2E6 /* Sources */,
+				3DCA50A619AE63610002F2E6 /* Frameworks */,
+				3DCA50A719AE63610002F2E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DCA50AB19AE63610002F2E6 /* PBXTargetDependency */,
+			);
+			name = MIBadgeButtonTests;
+			productName = MIBadgeButtonTests;
+			productReference = 3DCA50A919AE63610002F2E6 /* MIBadgeButtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DCA508F19AE63610002F2E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Youxel Technology";
+				TargetAttributes = {
+					3DCA509619AE63610002F2E6 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					3DCA50A819AE63610002F2E6 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 3DCA509619AE63610002F2E6;
+					};
+				};
+			};
+			buildConfigurationList = 3DCA509219AE63610002F2E6 /* Build configuration list for PBXProject "MIBadgeButton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DCA508E19AE63610002F2E6;
+			productRefGroup = 3DCA509819AE63610002F2E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DCA509619AE63610002F2E6 /* MIBadgeButton */,
+				3DCA50A819AE63610002F2E6 /* MIBadgeButtonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DCA509519AE63610002F2E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DCA50A219AE63610002F2E6 /* Main.storyboard in Resources */,
+				3DCA50A419AE63610002F2E6 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DCA50A719AE63610002F2E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DCA509319AE63610002F2E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DCA509F19AE63610002F2E6 /* ViewController.swift in Sources */,
+				3DCA509D19AE63610002F2E6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DCA50A519AE63610002F2E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DCA50B019AE63610002F2E6 /* MIBadgeButtonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DCA50AB19AE63610002F2E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DCA509619AE63610002F2E6 /* MIBadgeButton */;
+			targetProxy = 3DCA50AA19AE63610002F2E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DCA50A019AE63610002F2E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DCA50A119AE63610002F2E6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DCA50B119AE63610002F2E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DCA50B219AE63610002F2E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DCA50B419AE63610002F2E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = MIBadgeButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3DCA50B519AE63610002F2E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = MIBadgeButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3DCA50B719AE63610002F2E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MIBadgeButton.app/MIBadgeButton";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MIBadgeButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		3DCA50B819AE63610002F2E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MIBadgeButton.app/MIBadgeButton";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MIBadgeButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DCA509219AE63610002F2E6 /* Build configuration list for PBXProject "MIBadgeButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DCA50B119AE63610002F2E6 /* Debug */,
+				3DCA50B219AE63610002F2E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DCA50B319AE63610002F2E6 /* Build configuration list for PBXNativeTarget "MIBadgeButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DCA50B419AE63610002F2E6 /* Debug */,
+				3DCA50B519AE63610002F2E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3DCA50B619AE63610002F2E6 /* Build configuration list for PBXNativeTarget "MIBadgeButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DCA50B719AE63610002F2E6 /* Debug */,
+				3DCA50B819AE63610002F2E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DCA508F19AE63610002F2E6 /* Project object */;
+}
