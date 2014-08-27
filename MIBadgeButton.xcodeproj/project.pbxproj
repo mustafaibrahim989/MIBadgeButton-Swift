@@ -12,6 +12,8 @@
 		3DCA50A219AE63610002F2E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA50A019AE63610002F2E6 /* Main.storyboard */; };
 		3DCA50A419AE63610002F2E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA50A319AE63610002F2E6 /* Images.xcassets */; };
 		3DCA50B019AE63610002F2E6 /* MIBadgeButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA50AF19AE63610002F2E6 /* MIBadgeButtonTests.swift */; };
+		3DCA50BC19AE66180002F2E6 /* MIBadgeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA50BB19AE66180002F2E6 /* MIBadgeButton.swift */; };
+		3DCA50BE19AE66300002F2E6 /* MIBadgeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA50BD19AE66300002F2E6 /* MIBadgeLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,12 +30,14 @@
 		3DCA509719AE63610002F2E6 /* MIBadgeButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MIBadgeButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCA509B19AE63610002F2E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DCA509C19AE63610002F2E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3DCA509E19AE63610002F2E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DCA509E19AE63610002F2E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = MIBadgeButton/ViewController.swift; sourceTree = "<group>"; };
 		3DCA50A119AE63610002F2E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3DCA50A319AE63610002F2E6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3DCA50A319AE63610002F2E6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MIBadgeButton/Images.xcassets; sourceTree = "<group>"; };
 		3DCA50A919AE63610002F2E6 /* MIBadgeButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MIBadgeButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCA50AE19AE63610002F2E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DCA50AF19AE63610002F2E6 /* MIBadgeButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIBadgeButtonTests.swift; sourceTree = "<group>"; };
+		3DCA50BB19AE66180002F2E6 /* MIBadgeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MIBadgeButton.swift; path = Classes/MIBadgeButton.swift; sourceTree = "<group>"; };
+		3DCA50BD19AE66300002F2E6 /* MIBadgeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MIBadgeLabel.swift; path = Classes/MIBadgeLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,10 @@
 		3DCA508E19AE63610002F2E6 = {
 			isa = PBXGroup;
 			children = (
+				3DCA50A019AE63610002F2E6 /* Main.storyboard */,
+				3DCA50A319AE63610002F2E6 /* Images.xcassets */,
+				3DCA50BA19AE64370002F2E6 /* Controllers */,
+				3DCA50B919AE64230002F2E6 /* Classes */,
 				3DCA509919AE63610002F2E6 /* MIBadgeButton */,
 				3DCA50AC19AE63610002F2E6 /* MIBadgeButtonTests */,
 				3DCA509819AE63610002F2E6 /* Products */,
@@ -76,9 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				3DCA509C19AE63610002F2E6 /* AppDelegate.swift */,
-				3DCA509E19AE63610002F2E6 /* ViewController.swift */,
-				3DCA50A019AE63610002F2E6 /* Main.storyboard */,
-				3DCA50A319AE63610002F2E6 /* Images.xcassets */,
 				3DCA509A19AE63610002F2E6 /* Supporting Files */,
 			);
 			path = MIBadgeButton;
@@ -107,6 +112,23 @@
 				3DCA50AE19AE63610002F2E6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DCA50B919AE64230002F2E6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3DCA50BB19AE66180002F2E6 /* MIBadgeButton.swift */,
+				3DCA50BD19AE66300002F2E6 /* MIBadgeLabel.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		3DCA50BA19AE64370002F2E6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3DCA509E19AE63610002F2E6 /* ViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +231,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DCA509F19AE63610002F2E6 /* ViewController.swift in Sources */,
+				3DCA50BC19AE66180002F2E6 /* MIBadgeButton.swift in Sources */,
+				3DCA50BE19AE66300002F2E6 /* MIBadgeLabel.swift in Sources */,
 				3DCA509D19AE63610002F2E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,6 +262,7 @@
 				3DCA50A119AE63610002F2E6 /* Base */,
 			);
 			name = Main.storyboard;
+			path = MIBadgeButton;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

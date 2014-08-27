@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6162" systemVersion="14A238h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.21" systemVersion="14A238x" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6160"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.13"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MIBadgeButton" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,68 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfh-fY-tGI" customClass="MIBadgeButton" customModule="MIBadgeButton" customModuleProvider="target">
+                                <rect key="frame" x="207" y="396" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="E36-WJ-hEd"/>
+                                    <constraint firstAttribute="height" constant="64" id="Mvh-h8-aXa"/>
+                                </constraints>
+                                <state key="normal" image="twitter">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhS-om-uBR" customClass="MIBadgeButton" customModule="MIBadgeButton" customModuleProvider="target">
+                                <rect key="frame" x="297" y="396" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="OgY-Nd-AqZ"/>
+                                    <constraint firstAttribute="height" constant="64" id="XE6-e9-JMA"/>
+                                </constraints>
+                                <state key="normal" image="pinterest">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ucl-NW-9Wx" customClass="MIBadgeButton" customModule="MIBadgeButton" customModuleProvider="target">
+                                <rect key="frame" x="119" y="396" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="IYO-df-ijC"/>
+                                    <constraint firstAttribute="height" constant="64" id="zl2-ar-HP8"/>
+                                </constraints>
+                                <state key="normal" image="facebook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gfh-fY-tGI" firstAttribute="leading" secondItem="Ucl-NW-9Wx" secondAttribute="trailing" constant="24" id="0B8-aw-WjT"/>
+                            <constraint firstItem="Ucl-NW-9Wx" firstAttribute="height" secondItem="fhS-om-uBR" secondAttribute="height" id="3HC-iL-hB6"/>
+                            <constraint firstItem="Ucl-NW-9Wx" firstAttribute="width" secondItem="gfh-fY-tGI" secondAttribute="width" id="BIM-UJ-Dul"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gfh-fY-tGI" secondAttribute="bottom" constant="20" id="Flk-vM-UYu"/>
+                            <constraint firstAttribute="centerX" secondItem="gfh-fY-tGI" secondAttribute="centerX" constant="1" id="JW9-eM-Qe0"/>
+                            <constraint firstItem="Ucl-NW-9Wx" firstAttribute="height" secondItem="gfh-fY-tGI" secondAttribute="height" id="JYt-hU-QsL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ucl-NW-9Wx" secondAttribute="bottom" constant="20" id="X8F-fh-W2B"/>
+                            <constraint firstItem="fhS-om-uBR" firstAttribute="leading" secondItem="gfh-fY-tGI" secondAttribute="trailing" constant="26" id="crs-t1-Vgi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fhS-om-uBR" secondAttribute="bottom" constant="20" id="dnO-iF-EnS"/>
+                            <constraint firstItem="Ucl-NW-9Wx" firstAttribute="width" secondItem="fhS-om-uBR" secondAttribute="width" id="gcW-rl-0xf"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="facebookButton" destination="Ucl-NW-9Wx" id="7Al-wm-kFK"/>
+                        <outlet property="pinterestButton" destination="fhS-om-uBR" id="JpP-OR-5XG"/>
+                        <outlet property="twitterButton" destination="gfh-fY-tGI" id="C8q-H3-u41"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="290"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="facebook" width="128" height="128"/>
+        <image name="pinterest" width="64" height="64"/>
+        <image name="twitter" width="128" height="128"/>
+    </resources>
 </document>
