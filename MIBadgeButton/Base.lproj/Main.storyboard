@@ -36,6 +36,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="swift-logo-hero" translatesAutoresizingMaskIntoConstraints="NO" id="MvK-3n-Bhf">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="388"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ucl-NW-9Wx" customClass="MIBadgeButton" customModule="MIBadgeButton" customModuleProvider="target">
                                 <rect key="frame" x="119" y="396" width="64" height="64"/>
                                 <constraints>
@@ -55,10 +58,14 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gfh-fY-tGI" secondAttribute="bottom" constant="20" id="Flk-vM-UYu"/>
                             <constraint firstAttribute="centerX" secondItem="gfh-fY-tGI" secondAttribute="centerX" constant="1" id="JW9-eM-Qe0"/>
                             <constraint firstItem="Ucl-NW-9Wx" firstAttribute="height" secondItem="gfh-fY-tGI" secondAttribute="height" id="JYt-hU-QsL"/>
+                            <constraint firstAttribute="trailing" secondItem="MvK-3n-Bhf" secondAttribute="trailing" id="QXu-5a-Znb"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ucl-NW-9Wx" secondAttribute="bottom" constant="20" id="X8F-fh-W2B"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MvK-3n-Bhf" secondAttribute="bottom" constant="92" id="bH7-3A-Aog"/>
                             <constraint firstItem="fhS-om-uBR" firstAttribute="leading" secondItem="gfh-fY-tGI" secondAttribute="trailing" constant="26" id="crs-t1-Vgi"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fhS-om-uBR" secondAttribute="bottom" constant="20" id="dnO-iF-EnS"/>
                             <constraint firstItem="Ucl-NW-9Wx" firstAttribute="width" secondItem="fhS-om-uBR" secondAttribute="width" id="gcW-rl-0xf"/>
+                            <constraint firstAttribute="centerX" secondItem="MvK-3n-Bhf" secondAttribute="centerX" id="sxF-aK-UWH"/>
+                            <constraint firstItem="MvK-3n-Bhf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xMn-2s-dbv"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -77,6 +84,7 @@
     <resources>
         <image name="facebook" width="128" height="128"/>
         <image name="pinterest" width="64" height="64"/>
+        <image name="swift-logo-hero" width="950" height="534"/>
         <image name="twitter" width="128" height="128"/>
     </resources>
 </document>
