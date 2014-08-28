@@ -4,7 +4,7 @@ MIBadgeButton is badge button written in Swift with high UITableView/UICollectio
 
 ## Screenshots
 
-![alt tag](https://github.com/mustafaibrahim989/MIBadgeButton-Swift/blob/master/screenshot)
+![alt tag](https://github.com/mustafaibrahim989/MIBadgeButton-Swift/blob/master/screenshot.png)
 
 ## Installation
 
