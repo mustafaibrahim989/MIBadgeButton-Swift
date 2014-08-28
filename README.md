@@ -8,11 +8,13 @@ MIBadgeButton is badge button written in Swift with high UITableView/UICollectio
 
 ## Installation
 
-btn1.badgeString = "120"
+Add MIBadgeButton to Storyboard or init with frame
+
+button.badgeString = "120"
 
 Set EdgeInsets to change the default position of the badge (Optional)
 
-btn1.badgeEdgeInsets = UIEdgeInsetsMake(10, 0, 0, 15)
+button.badgeEdgeInsets = UIEdgeInsetsMake(10, 0, 0, 15)
 
 ## Author
 
@@ -21,7 +23,7 @@ Mustafa Ibrahim, mibrahim@youxel.com
 Notes
 ============
 
-Designed for iOS 6 and iOS 7.
+Designed for iOS 7.
 
 ## License
 
