@@ -9,10 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-                            
-    @IBOutlet var facebookButton: MIBadgeButton
-    @IBOutlet var twitterButton: MIBadgeButton
-    @IBOutlet var pinterestButton: MIBadgeButton
+    @IBOutlet var facebookButton: MIBadgeButton!
+    @IBOutlet var twitterButton: MIBadgeButton!
+    @IBOutlet var pinterestButton: MIBadgeButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
