@@ -23,7 +23,7 @@ class MIBadgeButton: UIButton {
     }
     }
 
-    init(frame: CGRect) {
+    override init(frame: CGRect) {
         calculationTextView = UITextView()
         badgeLabel = MIBadgeLabel(frame: CGRectMake(0, 0, 10, 10))
         super.init(frame: frame)
@@ -31,7 +31,7 @@ class MIBadgeButton: UIButton {
         self.setupBadgeViewWithString(badgeText: "")
     }
     
-    init(coder aDecoder: NSCoder!) {
+    required init(coder aDecoder: NSCoder!) {
         calculationTextView = UITextView()
         badgeLabel = MIBadgeLabel(frame: CGRectMake(0, 0, 10, 10))
         super.init(coder: aDecoder)
