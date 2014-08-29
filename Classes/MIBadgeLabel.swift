@@ -10,14 +10,6 @@ import UIKit
 
 class MIBadgeLabel: UILabel {
 
-    init(frame: CGRect) {
-        super.init(frame: frame)
-        // Initialization code
-    }
-
-    
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
     override func drawRect(rect: CGRect)
     {
         // Drawing code
@@ -36,10 +28,14 @@ class MIBadgeLabel: UILabel {
         CGContextSetFillColorWithColor(ctx, UIColor.whiteColor().CGColor)
         var textFrame: CGRect  = rect
         let labelString: NSString = self.text as NSString
-        let textSize: CGSize  = labelString.sizeWithFont(UIFont.systemFontOfSize(13.0))
+        let textSize: CGSize  = labelString.sizeWithAttributes([NSFontAttributeName : UIFont.systemFontOfSize(13.0)])
         textFrame.size.height = textSize.height
-        textFrame.origin.y = rect.origin.y + ceilf((rect.size.height - textFrame.size.height) / 2.0)
-        labelString.drawInRect(textFrame, withFont: UIFont.systemFontOfSize(13.0), lineBreakMode:NSLineBreakMode.ByClipping, alignment: NSTextAlignment.Center)
+        
+        textFrame.origin.y = rect.origin.y + ceil((rect.size.height - textFrame.size.height) / 2.0)
+        
+        labelString.drawInRect(textFrame, withAttributes: [NSFontAttributeName : UIFont.systemFontOfSize(13.0)])
+        
+//        labelString.drawInRect(textFrame, withFont: UIFont.systemFontOfSize(13.0), lineBreakMode:NSLineBreakMode.ByClipping, alignment: NSTextAlignment.Center)
         CGContextRestoreGState(ctx)
     }
     

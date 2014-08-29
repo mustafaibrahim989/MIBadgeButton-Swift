@@ -50,7 +50,7 @@ class MIBadgeButton: UIButton {
     func setupBadgeViewWithString(#badgeText: String?) {
         badgeLabel.clipsToBounds = true
         badgeLabel.text = badgeText
-        var badgeSize: CGSize  = badgeLabel.sizeThatFits(CGSize(width: 320, height: Int(FLT_MAX)))
+        var badgeSize: CGSize  = badgeLabel.sizeThatFits(CGSize(width: 320, height: CGFloat(FLT_MAX)))
         badgeSize.width = badgeSize.width < 20 ? 25 : badgeSize.width + 5
         
         var vertical: Double?, horizontal: Double?
