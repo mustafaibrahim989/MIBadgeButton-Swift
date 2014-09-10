@@ -25,18 +25,20 @@ class MIBadgeLabel: UILabel {
         CGContextRestoreGState(ctx)
         
         CGContextSaveGState(ctx)
-        CGContextSetFillColorWithColor(ctx, UIColor.whiteColor().CGColor)
+//        CGContextSetFillColorWithColor(ctx, UIColor.whiteColor().CGColor)
         var textFrame: CGRect  = rect
-        let labelString: NSString = self.text as NSString
+        let labelString: NSString = self.text! as NSString
         let textSize: CGSize  = labelString.sizeWithAttributes([NSFontAttributeName : UIFont.systemFontOfSize(13.0)])
         textFrame.size.height = textSize.height
         
         textFrame.origin.y = rect.origin.y + ceil((rect.size.height - textFrame.size.height) / 2.0)
         
-        labelString.drawInRect(textFrame, withAttributes: [NSFontAttributeName : UIFont.systemFontOfSize(13.0)])
+        var paragraphStyle: NSMutableParagraphStyle = NSMutableParagraphStyle();
+        paragraphStyle.alignment = .Center
         
-//        labelString.drawInRect(textFrame, withFont: UIFont.systemFontOfSize(13.0), lineBreakMode:NSLineBreakMode.ByClipping, alignment: NSTextAlignment.Center)
-        CGContextRestoreGState(ctx)
+        var attributes: NSMutableDictionary = [NSFontAttributeName: UIFont.systemFontOfSize(13.0), NSForegroundColorAttributeName : UIColor.whiteColor(), NSParagraphStyleAttributeName:paragraphStyle]
+        
+        labelString.drawInRect(textFrame, withAttributes: attributes)
     }
     
 
