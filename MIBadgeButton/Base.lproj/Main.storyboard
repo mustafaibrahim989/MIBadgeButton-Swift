@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.21" systemVersion="14A238x" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.13"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,11 +13,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfh-fY-tGI" customClass="MIBadgeButton" customModule="MIBadgeButton" customModuleProvider="target">
-                                <rect key="frame" x="207" y="396" width="64" height="64"/>
+                                <rect key="frame" x="267" y="516" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="E36-WJ-hEd"/>
                                     <constraint firstAttribute="height" constant="64" id="Mvh-h8-aXa"/>
@@ -27,7 +27,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhS-om-uBR" customClass="MIBadgeButton" customModule="MIBadgeButton" customModuleProvider="target">
-                                <rect key="frame" x="297" y="396" width="64" height="64"/>
+                                <rect key="frame" x="357" y="516" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="OgY-Nd-AqZ"/>
                                     <constraint firstAttribute="height" constant="64" id="XE6-e9-JMA"/>
@@ -36,11 +36,11 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="swift-logo-hero" translatesAutoresizingMaskIntoConstraints="NO" id="MvK-3n-Bhf">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="388"/>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="swift-logo-hero" translatesAutoresizingMaskIntoConstraints="NO" id="MvK-3n-Bhf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="388"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ucl-NW-9Wx" customClass="MIBadgeButton" customModule="MIBadgeButton" customModuleProvider="target">
-                                <rect key="frame" x="119" y="396" width="64" height="64"/>
+                                <rect key="frame" x="179" y="516" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="IYO-df-ijC"/>
                                     <constraint firstAttribute="height" constant="64" id="zl2-ar-HP8"/>
@@ -67,7 +67,6 @@
                             <constraint firstAttribute="centerX" secondItem="MvK-3n-Bhf" secondAttribute="centerX" id="sxF-aK-UWH"/>
                             <constraint firstItem="MvK-3n-Bhf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xMn-2s-dbv"/>
                         </constraints>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
