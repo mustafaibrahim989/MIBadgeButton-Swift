@@ -17,13 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        var colorsArray = [UIColor.flatOrangeColor(), UIColor.flatRedColor()]
-        
-        var rect: CGRect = self.view.bounds
-        
-        rect.size.height - 500
-        
-        self.view.backgroundColor = UIColor(gradientStyle: .TopToBottom, withFrame: rect, andColors: colorsArray)
+
         
         self.facebookButton.badgeString = "120"
         self.facebookButton.badgeEdgeInsets = UIEdgeInsetsMake(10, 0, 0, 15)

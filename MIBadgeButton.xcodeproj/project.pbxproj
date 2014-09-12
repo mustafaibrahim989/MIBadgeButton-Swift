@@ -16,11 +16,6 @@
 		3DCA50BE19AE66300002F2E6 /* MIBadgeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA50BD19AE66300002F2E6 /* MIBadgeLabel.swift */; };
 		3DCA50C519AF15D40002F2E6 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA50C419AF15D40002F2E6 /* README.md */; };
 		3DCA50C919AF176B0002F2E6 /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA50C819AF176B0002F2E6 /* screenshot.png */; };
-		3DD919E719C0DFA7009760CB /* ChameleonStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD919DE19C0DFA7009760CB /* ChameleonStatusBar.m */; };
-		3DD919E819C0DFA7009760CB /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD919E019C0DFA7009760CB /* NSArray+Chameleon.m */; };
-		3DD919E919C0DFA7009760CB /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD919E219C0DFA7009760CB /* UIColor+Chameleon.m */; };
-		3DD919EA19C0DFA7009760CB /* UIColor+CIELAB.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD919E419C0DFA7009760CB /* UIColor+CIELAB.m */; };
-		3DD919EB19C0DFA7009760CB /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD919E619C0DFA7009760CB /* UIViewController+Chameleon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,19 +42,6 @@
 		3DCA50BD19AE66300002F2E6 /* MIBadgeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MIBadgeLabel.swift; path = Classes/MIBadgeLabel.swift; sourceTree = "<group>"; };
 		3DCA50C419AF15D40002F2E6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3DCA50C819AF176B0002F2E6 /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
-		3DD919DB19C0DFA7009760CB /* Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chameleon.h; sourceTree = "<group>"; };
-		3DD919DC19C0DFA7009760CB /* ChameleonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChameleonMacros.h; sourceTree = "<group>"; };
-		3DD919DD19C0DFA7009760CB /* ChameleonStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChameleonStatusBar.h; sourceTree = "<group>"; };
-		3DD919DE19C0DFA7009760CB /* ChameleonStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChameleonStatusBar.m; sourceTree = "<group>"; };
-		3DD919DF19C0DFA7009760CB /* NSArray+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Chameleon.h"; sourceTree = "<group>"; };
-		3DD919E019C0DFA7009760CB /* NSArray+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Chameleon.m"; sourceTree = "<group>"; };
-		3DD919E119C0DFA7009760CB /* UIColor+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Chameleon.h"; sourceTree = "<group>"; };
-		3DD919E219C0DFA7009760CB /* UIColor+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Chameleon.m"; sourceTree = "<group>"; };
-		3DD919E319C0DFA7009760CB /* UIColor+CIELAB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CIELAB.h"; sourceTree = "<group>"; };
-		3DD919E419C0DFA7009760CB /* UIColor+CIELAB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CIELAB.m"; sourceTree = "<group>"; };
-		3DD919E519C0DFA7009760CB /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Chameleon.h"; sourceTree = "<group>"; };
-		3DD919E619C0DFA7009760CB /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Chameleon.m"; sourceTree = "<group>"; };
-		3DD919EE19C0E091009760CB /* MIBadgeButton-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MIBadgeButton-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +65,10 @@
 		3DCA508E19AE63610002F2E6 = {
 			isa = PBXGroup;
 			children = (
-				3DD919EE19C0E091009760CB /* MIBadgeButton-Bridging-Header.h */,
 				3DCA50C819AF176B0002F2E6 /* screenshot.png */,
 				3DCA50C419AF15D40002F2E6 /* README.md */,
 				3DCA50A019AE63610002F2E6 /* Main.storyboard */,
 				3DCA50A319AE63610002F2E6 /* Images.xcassets */,
-				3DD919DA19C0DFA7009760CB /* Chameleon */,
 				3DCA50BA19AE64370002F2E6 /* Controllers */,
 				3DCA50B919AE64230002F2E6 /* Classes */,
 				3DCA509919AE63610002F2E6 /* MIBadgeButton */,
@@ -155,25 +135,6 @@
 				3DCA509E19AE63610002F2E6 /* ViewController.swift */,
 			);
 			name = Controllers;
-			sourceTree = "<group>";
-		};
-		3DD919DA19C0DFA7009760CB /* Chameleon */ = {
-			isa = PBXGroup;
-			children = (
-				3DD919DB19C0DFA7009760CB /* Chameleon.h */,
-				3DD919DC19C0DFA7009760CB /* ChameleonMacros.h */,
-				3DD919DD19C0DFA7009760CB /* ChameleonStatusBar.h */,
-				3DD919DE19C0DFA7009760CB /* ChameleonStatusBar.m */,
-				3DD919DF19C0DFA7009760CB /* NSArray+Chameleon.h */,
-				3DD919E019C0DFA7009760CB /* NSArray+Chameleon.m */,
-				3DD919E119C0DFA7009760CB /* UIColor+Chameleon.h */,
-				3DD919E219C0DFA7009760CB /* UIColor+Chameleon.m */,
-				3DD919E319C0DFA7009760CB /* UIColor+CIELAB.h */,
-				3DD919E419C0DFA7009760CB /* UIColor+CIELAB.m */,
-				3DD919E519C0DFA7009760CB /* UIViewController+Chameleon.h */,
-				3DD919E619C0DFA7009760CB /* UIViewController+Chameleon.m */,
-			);
-			path = Chameleon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,15 +238,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DCA509F19AE63610002F2E6 /* ViewController.swift in Sources */,
-				3DD919EA19C0DFA7009760CB /* UIColor+CIELAB.m in Sources */,
 				3DCA50BC19AE66180002F2E6 /* MIBadgeButton.swift in Sources */,
-				3DD919E919C0DFA7009760CB /* UIColor+Chameleon.m in Sources */,
-				3DD919E719C0DFA7009760CB /* ChameleonStatusBar.m in Sources */,
-				3DD919EB19C0DFA7009760CB /* UIViewController+Chameleon.m in Sources */,
 				3DCA50C519AF15D40002F2E6 /* README.md in Sources */,
 				3DCA50BE19AE66300002F2E6 /* MIBadgeLabel.swift in Sources */,
 				3DCA509D19AE63610002F2E6 /* AppDelegate.swift in Sources */,
-				3DD919E819C0DFA7009760CB /* NSArray+Chameleon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +363,7 @@
 				INFOPLIST_FILE = MIBadgeButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$SRCROOT/MIBadgeButton-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -420,7 +376,7 @@
 				INFOPLIST_FILE = MIBadgeButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$SRCROOT/MIBadgeButton-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
