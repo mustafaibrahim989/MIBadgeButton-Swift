@@ -18,7 +18,7 @@ button.badgeEdgeInsets = UIEdgeInsetsMake(10, 0, 0, 15)
 
 ## Author
 
-Mustafa Ibrahim, mibrahim@youxel.com
+Mustafa Ibrahim, mustafa.ibrahim989@gmail.com
 
 Notes
 ============
