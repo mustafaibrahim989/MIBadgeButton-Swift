@@ -38,7 +38,7 @@ class MIBadgeLabel: UILabel {
         
         var attributes: NSMutableDictionary = [NSFontAttributeName: UIFont.systemFontOfSize(13.0), NSForegroundColorAttributeName : UIColor.whiteColor(), NSParagraphStyleAttributeName:paragraphStyle]
         
-        labelString.drawInRect(textFrame, withAttributes: attributes)
+        labelString.drawInRect(textFrame, withAttributes: attributes as [NSObject : AnyObject])
     }
     
 

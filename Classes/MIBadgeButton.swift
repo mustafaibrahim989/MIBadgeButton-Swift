@@ -12,7 +12,7 @@ class MIBadgeButton: UIButton {
     
     var calculationTextView: UITextView
     var badgeLabel: UILabel
-    var badgeString: NSString? {
+    var badgeString: String? {
     didSet {
         self.setupBadgeViewWithString(badgeText: badgeString)
     }
@@ -38,7 +38,7 @@ class MIBadgeButton: UIButton {
         self.setupBadgeViewWithString(badgeText: "")
     }
     
-    func initWithFrame(#frame: CGRect, withBadgeString badgeString: NSString, withBadgeInsets badgeInsets: UIEdgeInsets) -> AnyObject {
+    func initWithFrame(#frame: CGRect, withBadgeString badgeString: String, withBadgeInsets badgeInsets: UIEdgeInsets) -> AnyObject {
         
         self.calculationTextView = UITextView()
         self.badgeLabel = MIBadgeLabel(frame: CGRectMake(0, 0, 10, 10))
@@ -79,7 +79,7 @@ class MIBadgeButton: UIButton {
         badgeLabel.textAlignment = .Center
         badgeLabel.backgroundColor = UIColor.redColor()
         badgeLabel.textColor = UIColor.whiteColor()
-        badgeLabel.layer.cornerRadius = 10.0
+        badgeLabel.layer.cornerRadius = 10
     }
 
 }
