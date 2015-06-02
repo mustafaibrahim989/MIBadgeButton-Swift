@@ -21,9 +21,9 @@ class ViewController: UIViewController {
         
         self.facebookButton.badgeString = "1"
         self.facebookButton.badgeEdgeInsets = UIEdgeInsetsMake(10, 0, 0, 15)
-        self.twitterButton.badgeString = "80"
+        self.twitterButton.badgeString = "180"
         self.twitterButton.badgeEdgeInsets = UIEdgeInsetsMake(10, 0, 0, 15)
-        self.pinterestButton.badgeString = "20"
+        self.pinterestButton.badgeString = "22220"
         self.pinterestButton.badgeEdgeInsets = UIEdgeInsetsMake(10, 0, 0, 15)
     }
 
