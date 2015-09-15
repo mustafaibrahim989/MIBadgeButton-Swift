@@ -13,7 +13,7 @@ class MIBadgeLabel: UILabel {
     override func drawRect(rect: CGRect)
     {
         // Drawing code
-        let ctx: CGContextRef = UIGraphicsGetCurrentContext()
+        let ctx: CGContextRef = UIGraphicsGetCurrentContext()!
         let borderPath: UIBezierPath = UIBezierPath(roundedRect: rect, byRoundingCorners:UIRectCorner.AllCorners, cornerRadii: CGSizeMake(10.0, 10.0))
 
         CGContextSetFillColorWithColor(ctx, UIColor.whiteColor().CGColor)
@@ -21,7 +21,7 @@ class MIBadgeLabel: UILabel {
         CGContextAddPath(ctx, borderPath.CGPath)
         CGContextSetLineWidth(ctx, 4.0)
         CGContextSetStrokeColorWithColor(ctx, UIColor.clearColor().CGColor)
-        CGContextDrawPath(ctx, kCGPathStroke)
+        CGContextDrawPath(ctx, CGPathDrawingMode.Stroke)
         CGContextRestoreGState(ctx)
         
         CGContextSaveGState(ctx)
@@ -33,12 +33,12 @@ class MIBadgeLabel: UILabel {
         
         textFrame.origin.y = rect.origin.y + ceil((rect.size.height - textFrame.size.height) / 2.0)
         
-        var paragraphStyle: NSMutableParagraphStyle = NSMutableParagraphStyle();
+        let paragraphStyle: NSMutableParagraphStyle = NSMutableParagraphStyle();
         paragraphStyle.alignment = .Center
         
-        var attributes: NSMutableDictionary = [NSFontAttributeName: UIFont.systemFontOfSize(13.0), NSForegroundColorAttributeName : UIColor.whiteColor(), NSParagraphStyleAttributeName:paragraphStyle]
+        let attributes = [NSFontAttributeName: UIFont.systemFontOfSize(13.0), NSForegroundColorAttributeName : UIColor.whiteColor(), NSParagraphStyleAttributeName:paragraphStyle]
         
-        labelString.drawInRect(textFrame, withAttributes: attributes as [NSObject : AnyObject])
+        labelString.drawInRect(textFrame, withAttributes: attributes)
     }
     
 

@@ -31,14 +31,14 @@ class MIBadgeButton: UIButton {
         self.setupBadgeViewWithString(badgeText: "")
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         calculationTextView = UITextView()
         badgeLabel = MIBadgeLabel(frame: CGRectMake(0, 0, 10, 10))
         super.init(coder: aDecoder)
         self.setupBadgeViewWithString(badgeText: "")
     }
     
-    func initWithFrame(#frame: CGRect, withBadgeString badgeString: String, withBadgeInsets badgeInsets: UIEdgeInsets) -> AnyObject {
+    func initWithFrame(frame frame: CGRect, withBadgeString badgeString: String, withBadgeInsets badgeInsets: UIEdgeInsets) -> AnyObject {
         
         self.calculationTextView = UITextView()
         self.badgeLabel = MIBadgeLabel(frame: CGRectMake(0, 0, 10, 10))
@@ -47,7 +47,7 @@ class MIBadgeButton: UIButton {
         return self
     }
     
-    func setupBadgeViewWithString(#badgeText: String?) {
+    func setupBadgeViewWithString(badgeText badgeText: String?) {
         badgeLabel.clipsToBounds = true
         badgeLabel.text = badgeText
         var badgeSize: CGSize  = badgeLabel.sizeThatFits(CGSize(width: 320, height: CGFloat(FLT_MAX)))
