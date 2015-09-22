@@ -10,17 +10,30 @@ import UIKit
 
 class MIBadgeButton: UIButton {
     
-    var calculationTextView: UITextView
-    var badgeLabel: UILabel
+    private var calculationTextView: UITextView
+    private var badgeLabel: MIBadgeLabel
     var badgeString: String? {
-    didSet {
-        self.setupBadgeViewWithString(badgeText: badgeString)
+        didSet {
+            setupBadgeViewWithString(badgeText: badgeString)
+        }
     }
-    }
+    
     var badgeEdgeInsets: UIEdgeInsets? {
-    didSet {
-       self.setupBadgeViewWithString(badgeText: badgeString)
+        didSet {
+            setupBadgeViewWithString(badgeText: badgeString)
+        }
     }
+    
+    var badgeBackgroundColor = UIColor.redColor() {
+        didSet {
+            badgeLabel.backgroundColor = badgeBackgroundColor
+        }
+    }
+    
+    var badgeTextColor = UIColor.whiteColor() {
+        didSet {
+            badgeLabel.textColor = badgeTextColor
+        }
     }
 
     override init(frame: CGRect) {
@@ -28,26 +41,26 @@ class MIBadgeButton: UIButton {
         badgeLabel = MIBadgeLabel(frame: CGRectMake(0, 0, 10, 10))
         super.init(frame: frame)
         // Initialization code
-        self.setupBadgeViewWithString(badgeText: "")
+        setupBadgeViewWithString(badgeText: "")
     }
     
     required init?(coder aDecoder: NSCoder) {
         calculationTextView = UITextView()
         badgeLabel = MIBadgeLabel(frame: CGRectMake(0, 0, 10, 10))
         super.init(coder: aDecoder)
-        self.setupBadgeViewWithString(badgeText: "")
+        setupBadgeViewWithString(badgeText: "")
     }
     
     func initWithFrame(frame frame: CGRect, withBadgeString badgeString: String, withBadgeInsets badgeInsets: UIEdgeInsets) -> AnyObject {
         
-        self.calculationTextView = UITextView()
-        self.badgeLabel = MIBadgeLabel(frame: CGRectMake(0, 0, 10, 10))
-        self.badgeEdgeInsets = badgeInsets
-        self.setupBadgeViewWithString(badgeText: badgeString)
+        calculationTextView = UITextView()
+        badgeLabel = MIBadgeLabel(frame: CGRectMake(0, 0, 10, 10))
+        badgeEdgeInsets = badgeInsets
+        setupBadgeViewWithString(badgeText: badgeString)
         return self
     }
     
-    func setupBadgeViewWithString(badgeText badgeText: String?) {
+    private func setupBadgeViewWithString(badgeText badgeText: String?) {
         badgeLabel.clipsToBounds = true
         badgeLabel.text = badgeText
         var badgeSize: CGSize  = badgeLabel.sizeThatFits(CGSize(width: 320, height: CGFloat(FLT_MAX)))
@@ -58,28 +71,28 @@ class MIBadgeButton: UIButton {
             vertical = Double(badgeInset.top) - Double(badgeInset.bottom)
             horizontal = Double(badgeInset.left) - Double(badgeInset.right)
             
-            let x = (Double(bounds.size.width) - 5 + horizontal!)
-            let y = -(Double(badgeSize.height) / 2) - 5 + vertical!
+            let x = (Double(bounds.size.width) - 10 + horizontal!)
+            let y = -(Double(badgeSize.height) / 2) - 10 + vertical!
             let width = Double(badgeSize.width)
             let height = Double(badgeSize.height)
             
             badgeLabel.frame = CGRect(x: x, y: y, width: width, height: height)
         } else {
-            badgeLabel.frame = CGRectMake(self.bounds.size.width - 5, -(badgeSize.height / 2) - 5, badgeSize.width, badgeSize.height)
+            badgeLabel.frame = CGRectMake(self.bounds.size.width - 10, -(badgeSize.height / 2) - 10, badgeSize.width, badgeSize.height)
         }
         
-        self.setupBadgeStyle()
-        self.addSubview(badgeLabel)
+        setupBadgeStyle()
+        addSubview(badgeLabel)
+        badgeLabel.badgeTextColor = badgeTextColor
         
         badgeLabel.hidden = badgeText != nil ? false : true
     }
     
-    func setupBadgeStyle()
-    {
+    private func setupBadgeStyle() {
         badgeLabel.textAlignment = .Center
-        badgeLabel.backgroundColor = UIColor.redColor()
-        badgeLabel.textColor = UIColor.whiteColor()
-        badgeLabel.layer.cornerRadius = 10
+        badgeLabel.backgroundColor = badgeBackgroundColor
+        badgeLabel.textColor = badgeTextColor
+        badgeLabel.layer.cornerRadius = badgeLabel.bounds.size.width > 25 ? 8 : badgeLabel.bounds.size.width / 2
     }
 
 }

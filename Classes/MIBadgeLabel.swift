@@ -9,6 +9,8 @@
 import UIKit
 
 class MIBadgeLabel: UILabel {
+    
+    var badgeTextColor = UIColor.whiteColor()
 
     override func drawRect(rect: CGRect)
     {
@@ -16,7 +18,6 @@ class MIBadgeLabel: UILabel {
         let ctx: CGContextRef = UIGraphicsGetCurrentContext()!
         let borderPath: UIBezierPath = UIBezierPath(roundedRect: rect, byRoundingCorners:UIRectCorner.AllCorners, cornerRadii: CGSizeMake(10.0, 10.0))
 
-        CGContextSetFillColorWithColor(ctx, UIColor.whiteColor().CGColor)
         CGContextSaveGState(ctx)
         CGContextAddPath(ctx, borderPath.CGPath)
         CGContextSetLineWidth(ctx, 4.0)
@@ -36,7 +37,7 @@ class MIBadgeLabel: UILabel {
         let paragraphStyle: NSMutableParagraphStyle = NSMutableParagraphStyle();
         paragraphStyle.alignment = .Center
         
-        let attributes = [NSFontAttributeName: UIFont.systemFontOfSize(13.0), NSForegroundColorAttributeName : UIColor.whiteColor(), NSParagraphStyleAttributeName:paragraphStyle]
+        let attributes = [NSFontAttributeName: UIFont.systemFontOfSize(13.0), NSForegroundColorAttributeName : badgeTextColor, NSParagraphStyleAttributeName:paragraphStyle]
         
         labelString.drawInRect(textFrame, withAttributes: attributes)
     }
