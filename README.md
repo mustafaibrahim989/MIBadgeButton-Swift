@@ -13,7 +13,11 @@ Add MIBadgeButton to Storyboard or init with frame
 
 button.badgeString = "120"
 
+```
+
 Set EdgeInsets to change the default position of the badge (Optional)
+
+```swift
 
 button.badgeEdgeInsets = UIEdgeInsetsMake(10, 0, 0, 15)
 
