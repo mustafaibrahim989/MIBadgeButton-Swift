@@ -13,7 +13,6 @@
 		3DCA50A419AE63610002F2E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA50A319AE63610002F2E6 /* Images.xcassets */; };
 		3DCA50B019AE63610002F2E6 /* MIBadgeButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA50AF19AE63610002F2E6 /* MIBadgeButtonTests.swift */; };
 		3DCA50BC19AE66180002F2E6 /* MIBadgeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA50BB19AE66180002F2E6 /* MIBadgeButton.swift */; };
-		3DCA50BE19AE66300002F2E6 /* MIBadgeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA50BD19AE66300002F2E6 /* MIBadgeLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +36,6 @@
 		3DCA50AE19AE63610002F2E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DCA50AF19AE63610002F2E6 /* MIBadgeButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIBadgeButtonTests.swift; sourceTree = "<group>"; };
 		3DCA50BB19AE66180002F2E6 /* MIBadgeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MIBadgeButton.swift; path = Classes/MIBadgeButton.swift; sourceTree = "<group>"; };
-		3DCA50BD19AE66300002F2E6 /* MIBadgeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MIBadgeLabel.swift; path = Classes/MIBadgeLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				3DCA50BB19AE66180002F2E6 /* MIBadgeButton.swift */,
-				3DCA50BD19AE66300002F2E6 /* MIBadgeLabel.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -234,7 +231,6 @@
 			files = (
 				3DCA509F19AE63610002F2E6 /* ViewController.swift in Sources */,
 				3DCA50BC19AE66180002F2E6 /* MIBadgeButton.swift in Sources */,
-				3DCA50BE19AE66300002F2E6 /* MIBadgeLabel.swift in Sources */,
 				3DCA509D19AE63610002F2E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

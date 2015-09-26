@@ -9,9 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet var facebookButton: MIBadgeButton!
-    @IBOutlet var twitterButton: MIBadgeButton!
-    @IBOutlet var pinterestButton: MIBadgeButton!
+    @IBOutlet weak var facebookButton: MIBadgeButton!
+    @IBOutlet weak var twitterButton: MIBadgeButton!
+    @IBOutlet weak var pinterestButton: MIBadgeButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,9 +19,9 @@ class ViewController: UIViewController {
         
 
         
-        facebookButton.badgeString = "1"
-        facebookButton.badgeTextColor = UIColor.blackColor()
-        facebookButton.badgeEdgeInsets = UIEdgeInsetsMake(10, 0, 0, 15)
+        facebookButton.badgeString = "19"
+        facebookButton.badgeTextColor = UIColor.whiteColor()
+//        facebookButton.badgeEdgeInsets = UIEdgeInsetsMake(10, 0, 0, 15)
         twitterButton.badgeString = "180"
         twitterButton.badgeEdgeInsets = UIEdgeInsetsMake(10, 0, 0, 15)
         pinterestButton.badgeString = "22220"

@@ -10,8 +10,7 @@ import UIKit
 
 class MIBadgeButton: UIButton {
     
-    private var calculationTextView: UITextView
-    private var badgeLabel: MIBadgeLabel
+    private var badgeLabel: UILabel
     var badgeString: String? {
         didSet {
             setupBadgeViewWithString(badgeText: badgeString)
@@ -37,24 +36,21 @@ class MIBadgeButton: UIButton {
     }
 
     override init(frame: CGRect) {
-        calculationTextView = UITextView()
-        badgeLabel = MIBadgeLabel(frame: CGRectMake(0, 0, 10, 10))
+        badgeLabel = UILabel()
         super.init(frame: frame)
         // Initialization code
         setupBadgeViewWithString(badgeText: "")
     }
     
     required init?(coder aDecoder: NSCoder) {
-        calculationTextView = UITextView()
-        badgeLabel = MIBadgeLabel(frame: CGRectMake(0, 0, 10, 10))
+        badgeLabel = UILabel()
         super.init(coder: aDecoder)
         setupBadgeViewWithString(badgeText: "")
     }
     
     func initWithFrame(frame frame: CGRect, withBadgeString badgeString: String, withBadgeInsets badgeInsets: UIEdgeInsets) -> AnyObject {
         
-        calculationTextView = UITextView()
-        badgeLabel = MIBadgeLabel(frame: CGRectMake(0, 0, 10, 10))
+        badgeLabel = UILabel()
         badgeEdgeInsets = badgeInsets
         setupBadgeViewWithString(badgeText: badgeString)
         return self
@@ -63,9 +59,14 @@ class MIBadgeButton: UIButton {
     private func setupBadgeViewWithString(badgeText badgeText: String?) {
         badgeLabel.clipsToBounds = true
         badgeLabel.text = badgeText
-        var badgeSize: CGSize  = badgeLabel.sizeThatFits(CGSize(width: 320, height: CGFloat(FLT_MAX)))
-        badgeSize.width = badgeSize.width < 20 ? 20 : badgeSize.width + 5
+        badgeLabel.font = UIFont.systemFontOfSize(12)
+        badgeLabel.textAlignment = .Center
+        badgeLabel.sizeToFit()
+        let badgeSize = badgeLabel.frame.size
         
+        let height = max(20, Double(badgeSize.height) + 5.0)
+        let width = max(height, Double(badgeSize.width) + 10.0)
+    
         var vertical: Double?, horizontal: Double?
         if let badgeInset = self.badgeEdgeInsets {
             vertical = Double(badgeInset.top) - Double(badgeInset.bottom)
@@ -73,17 +74,15 @@ class MIBadgeButton: UIButton {
             
             let x = (Double(bounds.size.width) - 10 + horizontal!)
             let y = -(Double(badgeSize.height) / 2) - 10 + vertical!
-            let width = Double(badgeSize.width)
-            let height = Double(badgeSize.height)
-            
             badgeLabel.frame = CGRect(x: x, y: y, width: width, height: height)
         } else {
-            badgeLabel.frame = CGRectMake(self.bounds.size.width - 10, -(badgeSize.height / 2) - 10, badgeSize.width, badgeSize.height)
+            let x = CGRectGetWidth(self.frame) - CGFloat((width / 2.0))
+            let y = CGFloat(-(height / 2.0))
+            badgeLabel.frame = CGRectMake(x, y, CGFloat(width), CGFloat(height))
         }
         
         setupBadgeStyle()
         addSubview(badgeLabel)
-        badgeLabel.badgeTextColor = badgeTextColor
         
         badgeLabel.hidden = badgeText != nil ? false : true
     }
@@ -92,7 +91,6 @@ class MIBadgeButton: UIButton {
         badgeLabel.textAlignment = .Center
         badgeLabel.backgroundColor = badgeBackgroundColor
         badgeLabel.textColor = badgeTextColor
-        badgeLabel.layer.cornerRadius = badgeLabel.bounds.size.width > 25 ? 8 : badgeLabel.bounds.size.width / 2
+        badgeLabel.layer.cornerRadius = badgeLabel.bounds.size.height / 2
     }
-
 }
