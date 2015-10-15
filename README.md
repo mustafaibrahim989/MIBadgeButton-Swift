@@ -12,7 +12,7 @@ MIBadgeButton is available through [CocoaPods](http://cocoapods.org), to install
 it simply add the following line to your Podfile:
   
     use_frameworks!
-    pod "MIBadgeButton"
+    pod "MIBadgeButton-Swift"
 
 Add MIBadgeButton to Storyboard or init with frame
 
