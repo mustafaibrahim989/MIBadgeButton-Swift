@@ -46,7 +46,7 @@ Mustafa Ibrahim, mustafa.ibrahim989@gmail.com
 Notes
 ============
 
-Designed for iOS 7.
+Designed for iOS 8.
 
 ## License
 
