@@ -8,6 +8,12 @@ MIBadgeButton is badge button written in Swift with high UITableView/UICollectio
 
 ## Installation
 
+MIBadgeButton is available through [CocoaPods](http://cocoapods.org), to install
+it simply add the following line to your Podfile:
+  
+    use_frameworks!
+    pod "MIBadgeButton"
+
 Add MIBadgeButton to Storyboard or init with frame
 
 ```swift
