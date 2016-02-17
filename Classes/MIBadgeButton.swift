@@ -8,47 +8,47 @@
 
 import UIKit
 
-class MIBadgeButton: UIButton {
+public class MIBadgeButton: UIButton {
     
     private var badgeLabel: UILabel
-    var badgeString: String? {
+    public var badgeString: String? {
         didSet {
             setupBadgeViewWithString(badgeText: badgeString)
         }
     }
     
-    var badgeEdgeInsets: UIEdgeInsets? {
+    public var badgeEdgeInsets: UIEdgeInsets? {
         didSet {
             setupBadgeViewWithString(badgeText: badgeString)
         }
     }
     
-    var badgeBackgroundColor = UIColor.redColor() {
+    public var badgeBackgroundColor = UIColor.redColor() {
         didSet {
             badgeLabel.backgroundColor = badgeBackgroundColor
         }
     }
     
-    var badgeTextColor = UIColor.whiteColor() {
+    public var badgeTextColor = UIColor.whiteColor() {
         didSet {
             badgeLabel.textColor = badgeTextColor
         }
     }
 
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         badgeLabel = UILabel()
         super.init(frame: frame)
         // Initialization code
         setupBadgeViewWithString(badgeText: "")
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         badgeLabel = UILabel()
         super.init(coder: aDecoder)
         setupBadgeViewWithString(badgeText: "")
     }
     
-    func initWithFrame(frame frame: CGRect, withBadgeString badgeString: String, withBadgeInsets badgeInsets: UIEdgeInsets) -> AnyObject {
+    public func initWithFrame(frame frame: CGRect, withBadgeString badgeString: String, withBadgeInsets badgeInsets: UIEdgeInsets) -> AnyObject {
         
         badgeLabel = UILabel()
         badgeEdgeInsets = badgeInsets
