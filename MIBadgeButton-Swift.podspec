@@ -8,12 +8,12 @@
 
 Pod::Spec.new do |s|
   s.name             = "MIBadgeButton-Swift"
-  s.version          = "0.1"
+  s.version          = "0.2"
   s.summary          = "iOS custom button badge."
 
   s.homepage         = "https://github.com/mustafaibrahim989/MIBadgeButton-Swift"
   # s.screenshots     = "https://raw.githubusercontent.com/mustafaibrahim989/MIBadgeButton-Swift/master/screenshot.png"
-  s.license          = { :type => 'MIT', :file => 'mit-license.txt' }
+  s.license          = { :type => "MIT", :file => "LICENSE" }
   s.author           = { "Mustafa Ibrahim" => "mustafa.ibrahim989@gmail.com" }
   s.source           = { :git => "https://github.com/mustafaibrahim989/MIBadgeButton-Swift.git", :tag => s.version.to_s }
   s.platform     = :ios, '8.0'
