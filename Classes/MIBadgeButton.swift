@@ -39,13 +39,13 @@ public class MIBadgeButton: UIButton {
         badgeLabel = UILabel()
         super.init(frame: frame)
         // Initialization code
-        setupBadgeViewWithString(badgeText: "")
+        setupBadgeViewWithString(badgeText: Optional.None)
     }
     
     required public init?(coder aDecoder: NSCoder) {
         badgeLabel = UILabel()
         super.init(coder: aDecoder)
-        setupBadgeViewWithString(badgeText: "")
+        setupBadgeViewWithString(badgeText: Optional.None)
     }
     
     public func initWithFrame(frame frame: CGRect, withBadgeString badgeString: String, withBadgeInsets badgeInsets: UIEdgeInsets) -> AnyObject {
@@ -84,7 +84,7 @@ public class MIBadgeButton: UIButton {
         setupBadgeStyle()
         addSubview(badgeLabel)
         
-        badgeLabel.hidden = badgeText != nil ? false : true
+        badgeLabel.hidden = badgeText != Optional.None ? false : true
     }
     
     private func setupBadgeStyle() {
