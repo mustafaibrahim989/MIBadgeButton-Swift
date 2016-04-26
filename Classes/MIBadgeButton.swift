@@ -34,7 +34,7 @@ class MIBadgeButton: UIButton {
             badgeLabel.textColor = badgeTextColor
         }
     }
-
+    
     override init(frame: CGRect) {
         badgeLabel = UILabel()
         super.init(frame: frame)
@@ -66,7 +66,7 @@ class MIBadgeButton: UIButton {
         
         let height = max(20, Double(badgeSize.height) + 5.0)
         let width = max(height, Double(badgeSize.width) + 10.0)
-    
+        
         var vertical: Double?, horizontal: Double?
         if let badgeInset = self.badgeEdgeInsets {
             vertical = Double(badgeInset.top) - Double(badgeInset.bottom)
