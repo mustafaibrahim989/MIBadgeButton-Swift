@@ -17,7 +17,7 @@ it simply add the following line to your Podfile:
     
     # Swift 2
     use_frameworks!
-    pod "MIBadgeButton-Swift", :git => 'https://github.com/mustafaibrahim989/MIBadgeButton-Swift.git', :branch => 'swift-2'
+    pod "MIBadgeButton-Swift", :git => 'https://github.com/mustafaibrahim989/MIBadgeButton-Swift.git', :branch => 'swift2'
 
 Add MIBadgeButton to Storyboard or init with frame
 
