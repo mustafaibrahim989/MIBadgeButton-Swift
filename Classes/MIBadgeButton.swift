@@ -56,6 +56,12 @@ open class MIBadgeButton: UIButton {
         return self
     }
     
+    //For Xcode 8.x
+    override open func layoutSubviews() {
+        super.layoutSubviews()
+        setupBadgeViewWithString(badgeText: self.badgeString)
+    }
+    
     fileprivate func setupBadgeViewWithString(badgeText: String?) {
         badgeLabel.clipsToBounds = true
         badgeLabel.text = badgeText
