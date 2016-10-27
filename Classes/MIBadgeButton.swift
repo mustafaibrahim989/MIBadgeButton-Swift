@@ -34,7 +34,20 @@ open class MIBadgeButton: UIButton {
             badgeLabel.textColor = badgeTextColor
         }
     }
-
+    
+    open var badgeCornerRadius = 0.0 {
+        didSet {
+            if badgeCornerRadius == 0.0 {
+                badgeLabel.layer.cornerRadius = badgeLabel.bounds.size.height / 2
+                
+            }
+            else {
+                badgeLabel.layer.cornerRadius = CGFloat(badgeCornerRadius)
+            }
+        }
+    }
+    
+    
     override public init(frame: CGRect) {
         badgeLabel = UILabel()
         super.init(frame: frame)
@@ -96,6 +109,5 @@ open class MIBadgeButton: UIButton {
         badgeLabel.textAlignment = .center
         badgeLabel.backgroundColor = badgeBackgroundColor
         badgeLabel.textColor = badgeTextColor
-        badgeLabel.layer.cornerRadius = badgeLabel.bounds.size.height / 2
     }
 }
