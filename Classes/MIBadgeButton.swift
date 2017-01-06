@@ -8,10 +8,11 @@
 
 import UIKit
 
+@IBDesignable
 open class MIBadgeButton: UIButton {
     
     fileprivate var badgeLabel: UILabel
-    open var badgeString: String? {
+    @IBInspectable open var badgeString: String? {
         didSet {
             setupBadgeViewWithString(badgeText: badgeString)
         }
@@ -23,13 +24,13 @@ open class MIBadgeButton: UIButton {
         }
     }
     
-    open var badgeBackgroundColor = UIColor.red {
+    @IBInspectable open var badgeBackgroundColor: UIColor? = UIColor.red {
         didSet {
             badgeLabel.backgroundColor = badgeBackgroundColor
         }
     }
     
-    open var badgeTextColor = UIColor.white {
+    @IBInspectable open var badgeTextColor: UIColor? = UIColor.white {
         didSet {
             badgeLabel.textColor = badgeTextColor
         }
