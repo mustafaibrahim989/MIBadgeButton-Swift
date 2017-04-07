@@ -15,9 +15,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-
         
         facebookButton.badgeString = "19"
         facebookButton.badgeTextColor = UIColor.white
