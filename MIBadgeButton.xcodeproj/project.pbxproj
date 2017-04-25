@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E3EBACD1EAF401E00F97804 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E3EBACC1EAF401E00F97804 /* CustomView.xib */; };
+		1E3EBAD01EAF428600F97804 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3EBACF1EAF428600F97804 /* CustomView.swift */; };
 		3DCA509D19AE63610002F2E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA509C19AE63610002F2E6 /* AppDelegate.swift */; };
 		3DCA509F19AE63610002F2E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA509E19AE63610002F2E6 /* ViewController.swift */; };
 		3DCA50A219AE63610002F2E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DCA50A019AE63610002F2E6 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E3EBACC1EAF401E00F97804 /* CustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
+		1E3EBACF1EAF428600F97804 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomView.swift; path = MIBadgeButton/CustomView.swift; sourceTree = "<group>"; };
 		3DCA509719AE63610002F2E6 /* MIBadgeButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MIBadgeButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCA509B19AE63610002F2E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DCA509C19AE63610002F2E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,9 +60,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E3EBACE1EAF425A00F97804 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				1E3EBACF1EAF428600F97804 /* CustomView.swift */,
+			);
+			name = CustomView;
+			sourceTree = "<group>";
+		};
 		3DCA508E19AE63610002F2E6 = {
 			isa = PBXGroup;
 			children = (
+				1E3EBACE1EAF425A00F97804 /* CustomView */,
+				1E3EBACC1EAF401E00F97804 /* CustomView.xib */,
 				3DCA50A019AE63610002F2E6 /* Main.storyboard */,
 				3DCA50A319AE63610002F2E6 /* Images.xcassets */,
 				3DCA50BA19AE64370002F2E6 /* Controllers */,
@@ -212,6 +226,7 @@
 			files = (
 				3DCA50A219AE63610002F2E6 /* Main.storyboard in Resources */,
 				3DCA50A419AE63610002F2E6 /* Images.xcassets in Resources */,
+				1E3EBACD1EAF401E00F97804 /* CustomView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DCA509F19AE63610002F2E6 /* ViewController.swift in Sources */,
+				1E3EBAD01EAF428600F97804 /* CustomView.swift in Sources */,
 				3DCA50BC19AE66180002F2E6 /* MIBadgeButton.swift in Sources */,
 				3DCA509D19AE63610002F2E6 /* AppDelegate.swift in Sources */,
 			);
@@ -356,6 +372,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.youxel.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -370,6 +387,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.youxel.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
