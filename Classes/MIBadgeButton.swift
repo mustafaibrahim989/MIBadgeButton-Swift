@@ -524,4 +524,14 @@ open class MIBadgeButton: UIButton {
         badgeLabel.textColor = badgeTextColor
         badgeLabel.layer.cornerRadius = badgeLabel.bounds.size.height / cornerRadiusFactor
     }
+ 
+     /**
+        When the Button's bounds change, readjust the badge to be in the correct spot.
+        This comes into play when the button is in a stack view and needs to adjust it's size, or when a constraint is changed.
+     */
+    open override var bounds: CGRect {
+        didSet {
+            setupBadgeViewWithString(badgeText: badgeString)
+        }
+    }
 }
