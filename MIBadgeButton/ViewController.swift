@@ -15,12 +15,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-
         
         facebookButton.badgeString = "19"
-        facebookButton.badgeTextColor = UIColor.whiteColor()
+        facebookButton.badgeTextColor = UIColor.white
         facebookButton.badgeEdgeInsets = UIEdgeInsetsMake(10, 0, 0, 15)
         twitterButton.badgeString = "180"
         twitterButton.badgeEdgeInsets = UIEdgeInsetsMake(10, 0, 0, 15)
